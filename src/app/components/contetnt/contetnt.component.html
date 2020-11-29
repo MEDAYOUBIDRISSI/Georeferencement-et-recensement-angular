@@ -27,9 +27,10 @@
                         <h4>Positio in Maps</h4>
                     </div>
                     <div class="widget-container">
-                            <agm-map [latitude]="lat" [longitude]="lng">
-                                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-                            </agm-map>
+                        <agm-map [latitude]="lat" [longitude]="lng" [latitude]="lat1" [longitude]="lng1">
+                            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                            <agm-marker [latitude]="lat1" [longitude]="lng1"></agm-marker>
+                        </agm-map>
                     </div>
                 </div>
             </div>
@@ -41,13 +42,68 @@
                     </div>
                     <div class="widget-container">
                         <div class="widget-block">
-                            <div id="pie-chart-legend">
-                            </div>
-                            <div id="pie-chart">
-                            </div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                                Ajouter Patremoin
+                            </button>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Ajouter Patremoin</h5>
+            </div>
+            <div class="modal-body">
+                    <form id="SignUpForm" method="post" class="form-horizontal" action="http://www.lab.westilian.com/matmix-admin/iconic-view/data/target.php">
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Libelle</label>
+                            <div class="col-lg-7">
+                                <input type="text" class="form-control" name="firstName" placeholder="First name"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Date Decovert</label>
+                            <div class="col-lg-7">
+                                <input type="text" class="form-control input-date-picker">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                                <label class="col-lg-4 control-label">Description</label>
+                                <div class="col-lg-7">
+                                    <textarea class="form-control" name="description" placeholder="Description ..."></textarea>
+                                </div>
+                            </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Select</label>
+                            <div class="col-lg-7">
+                                <select class="form-control select2">
+                                    <option>Select</option>
+                                    <optgroup label="Alaskan/Hawaiian Time Zone">
+                                        <option value="AK">Alaska</option>
+                                        <option value="HI">Hawaii</option>
+                                    </optgroup>
+                                    <optgroup label="Pacific Time Zone">
+                                        <option value="CA">California</option>
+                                        <option value="NV">Nevada</option>
+                                    </optgroup>
+                                    <optgroup label="Eastern Time Zone">
+                                        <option value="CT">Connecticut</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+
+                    </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save</button>
             </div>
         </div>
     </div>

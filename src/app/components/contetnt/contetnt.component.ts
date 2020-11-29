@@ -11,6 +11,8 @@ export class ContetntComponent implements OnInit {
   title = 'My first AGM project';
   lat = 51.678418;
   lng = 7.809007;
+  lat1 = 51.978418;
+  lng1 = 7.909007;
 
   ngOnInit(): void {
 

@@ -1,0 +1,152 @@
+<div class="main-container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box-widget widget-module no-border">
+                    <div class="widget-container">
+                        <div class=" widget-block">
+                            <div class="page-header">
+                                <h2>Ajouter Patrimoin</h2>
+                                <p>
+                                    Please provide your name, email address (won't be published) and a comment
+                                </p>
+                            </div>
+                            <form id="SignUpForm" method="post" class="form-horizontal" action="http://www.lab.westilian.com/matmix-admin/iconic-view/data/target.php">
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Full name</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" class="form-control" name="firstName" placeholder="First name"/>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <input type="text" class="form-control" name="lastName" placeholder="Last name"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Username</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" class="form-control" name="username"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Email address</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" class="form-control" name="email"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Password</label>
+                                    <div class="col-lg-4">
+                                        <input type="password" class="form-control" name="password"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Retype password</label>
+                                    <div class="col-lg-4">
+                                        <input type="password" class="form-control" name="confirmPassword"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Gender</label>
+                                    <div class="col-lg-4">
+                                        <div class="radio">
+                                            <label>
+                                            <input type="radio" name="gender" value="male"/> Male </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                            <input type="radio" name="gender" value="female"/> Female </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                            <input type="radio" name="gender" value="other"/> Other </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Birthday</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" class="form-control" name="birthday"/> (YYYY/MM/DD)
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Languages</label>
+                                    <div class="col-lg-4">
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" name="languages[]" value="english"/> English </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" name="languages[]" value="french"/> French </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" name="languages[]" value="german"/> German </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" name="languages[]" value="russian"/> Russian </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" name="languages[]" value="other"/> Other </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Programming Languages</label>
+                                    <div class="col-lg-4">
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" name="programs[]" value="net"/> .Net </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" name="programs[]" value="java"/> Java </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" name="programs[]" value="c"/> C/C++ </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" name="programs[]" value="php"/> PHP </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" name="programs[]" value="perl"/> Perl </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" name="programs[]" value="ruby"/> Ruby </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" name="programs[]" value="python"/> Python </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" name="programs[]" value="javascript"/> Javascript </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label" id="captchaOperation"></label>
+                                    <div class="col-lg-4">
+                                        <input type="text" class="form-control" name="captcha"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-4 col-lg-offset-3">
+                                        <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Sign up</button>
+                                        <button type="button" class="btn btn-info" id="resetBtn">Reset form</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

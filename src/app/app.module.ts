@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LeftbarComponent } from './components/leftbar/leftbar.component';
 import { ContetntComponent } from './components/contetnt/contetnt.component';
 import { AgmCoreModule } from '@agm/core';
+import { AddHeritageComponent } from './components/add-heritage/add-heritage.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AgmCoreModule } from '@agm/core';
     NavbareComponent,
     FooterComponent,
     LeftbarComponent,
-    ContetntComponent
+    ContetntComponent,
+    AddHeritageComponent
   ],
   imports: [
     BrowserModule,
