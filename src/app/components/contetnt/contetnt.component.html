@@ -20,24 +20,24 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <div class="box-widget widget-module">
                     <div class="widget-head clearfix">
-                        <span class="h-icon"><i class="fa fa-bar-map-o"></i></span>
+                        <span class="h-icon"><i class="fa fa-street-view"></i></span>
                         <h4>Positio in Maps</h4>
                     </div>
                     <div class="widget-container">
-                        <agm-map [latitude]="lat" [longitude]="lng" [latitude]="lat1" [longitude]="lng1">
+                        <agm-map id="map-home" [latitude]="lat" [longitude]="lng" [latitude]="lat1" [longitude]="lng1">
                             <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
                             <agm-marker [latitude]="lat1" [longitude]="lng1"></agm-marker>
                         </agm-map>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="box-widget widget-module">
                     <div class="widget-head clearfix">
-                        <span class="h-icon"><i class="fa fa-pie-chart"></i></span>
+                        <span class="h-icon"><i class="fa fa-list-alt"></i></span>
                         <h4>Pie Chart</h4>
                     </div>
                     <div class="widget-container">
@@ -46,6 +46,68 @@
                                 Ajouter Patremoin
                             </button>
                         </div>
+                    </div>
+                    <br>
+                    <div class="topic-container pending-ticket">
+                        <div class="corner-ribbon">
+                            <div>
+                                Patremoin
+                            </div>
+                        </div>
+                        <a class="topic-wrap" href="#">
+                            <span class="topic-thumb">
+                                <img src="assets/images/avatar/annapickard.jpg" alt="user">
+                            </span>
+                            <span class="topic-intro">
+                                <span class="topic-title">
+                                    Koutobia : 
+                                </span>
+                                <span class="topic-meta">
+                                    Description 
+                                </span>
+                            </span>
+                            <span class="topic-feedback-stat">
+                                <span class="topic-feedback-wrap">
+                                    <span>
+                                        <i class="fa fa-id"></i>
+                                    </span>
+                                    <span class="forum-reply-count">
+                                        #30 
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- //// -->
+                    <div class="topic-container pending-ticket">
+                        <div class="corner-ribbon">
+                            <div>
+                                Patremoin
+                            </div>
+                        </div>
+                        <a class="topic-wrap" href="#">
+                            <span class="topic-thumb">
+                                <img src="assets/images/avatar/annapickard.jpg" alt="user">
+                            </span>
+                            <span class="topic-intro">
+                                <span class="topic-title">
+                                    Koutobia : 
+                                </span>
+                                <span class="topic-meta">
+                                    Description 
+                                </span>
+                            </span>
+                            <span class="topic-feedback-stat">
+                                <span class="topic-feedback-wrap">
+                                    <span>
+                                        <i class="fa fa-id"></i>
+                                    </span>
+                                    <span class="forum-reply-count">
+                                        #30 
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -60,46 +122,54 @@
                 <h5 class="modal-title" id="staticBackdropLabel">Ajouter Patremoin</h5>
             </div>
             <div class="modal-body">
-                    <form id="SignUpForm" method="post" class="form-horizontal" action="http://www.lab.westilian.com/matmix-admin/iconic-view/data/target.php">
-                        <div class="form-group">
-                            <label class="col-lg-4 control-label">Libelle</label>
+                <form id="SignUpForm" method="post" class="form-horizontal" action="http://www.lab.westilian.com/matmix-admin/iconic-view/data/target.php">
+                    <div class="form-group">
+                        <label class="col-lg-4 control-label">Libelle</label>
+                        <div class="col-lg-7">
+                            <input type="text" class="form-control" name="firstName" placeholder="First name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-4 control-label">Date Decovert</label>
+                        <div class="col-lg-7">
+                            <input type="text" class="form-control input-date-picker">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <label class="col-lg-4 control-label">Description</label>
                             <div class="col-lg-7">
-                                <input type="text" class="form-control" name="firstName" placeholder="First name"/>
+                                <textarea class="form-control" name="description" placeholder="Description ..."></textarea>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-lg-4 control-label">Date Decovert</label>
-                            <div class="col-lg-7">
-                                <input type="text" class="form-control input-date-picker">
-                            </div>
+                    <div class="form-group">
+                        <label class="col-lg-4 control-label">Select</label>
+                        <div class="col-lg-7">
+                            <select class="form-control select2">
+                                <option>Select</option>
+                                <optgroup label="Alaskan/Hawaiian Time Zone">
+                                    <option value="AK">Alaska</option>
+                                    <option value="HI">Hawaii</option>
+                                </optgroup>
+                                <optgroup label="Pacific Time Zone">
+                                    <option value="CA">California</option>
+                                    <option value="NV">Nevada</option>
+                                </optgroup>
+                                <optgroup label="Eastern Time Zone">
+                                    <option value="CT">Connecticut</option>
+                                </optgroup>
+                            </select>
                         </div>
-                        <div class="form-group">
-                                <label class="col-lg-4 control-label">Description</label>
-                                <div class="col-lg-7">
-                                    <textarea class="form-control" name="description" placeholder="Description ..."></textarea>
-                                </div>
-                            </div>
-                        <div class="form-group">
-                            <label class="col-lg-4 control-label">Select</label>
-                            <div class="col-lg-7">
-                                <select class="form-control select2">
-                                    <option>Select</option>
-                                    <optgroup label="Alaskan/Hawaiian Time Zone">
-                                        <option value="AK">Alaska</option>
-                                        <option value="HI">Hawaii</option>
-                                    </optgroup>
-                                    <optgroup label="Pacific Time Zone">
-                                        <option value="CA">California</option>
-                                        <option value="NV">Nevada</option>
-                                    </optgroup>
-                                    <optgroup label="Eastern Time Zone">
-                                        <option value="CT">Connecticut</option>
-                                    </optgroup>
-                                </select>
-                            </div>
-                        </div>
-
-                    </form>
+                    </div>
+                    <div class="form-group">
+                            <label class="col-lg-4 control-label">Position </label>  
+                    </div>
+                    <div class="form-group">
+                        <agm-map id="map-add" [latitude]="lat" [longitude]="lng" [latitude]="lat1" [longitude]="lng1">
+                            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                            <agm-marker [latitude]="lat1" [longitude]="lng1"></agm-marker>
+                        </agm-map>
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
