@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "Georeferencement-et-recensement-angular"
+  "defaultProject": "Georeferencement-et-recensement-angular",
+  "cli": {
+    "analytics": "e4dbc4d2-1b38-4e83-a6ef-ac63a291a001"
+  }
 }
