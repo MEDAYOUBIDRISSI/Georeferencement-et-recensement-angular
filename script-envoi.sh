@@ -1,5 +1,5 @@
 git add .
-git commit -m "Template-Integration"
+git commit -m "Add-Maps"
 git remote add origin https://github.com/MEDAYOUBIDRISSI/Georeferencement-et-recensement-angular.git
 git push -f origin master
 

@@ -23,16 +23,13 @@
             <div class="col-md-8">
                 <div class="box-widget widget-module">
                     <div class="widget-head clearfix">
-                        <span class="h-icon"><i class="fa fa-bar-chart-o"></i></span>
-                        <h4>Combine Chart</h4>
+                        <span class="h-icon"><i class="fa fa-bar-map-o"></i></span>
+                        <h4>Positio in Maps</h4>
                     </div>
                     <div class="widget-container">
-                        <div class="widget-block">
-                            <div id="main-chart-legend">
-                            </div>
-                            <div id="main-chart">
-                            </div>
-                        </div>
+                            <agm-map [latitude]="lat" [longitude]="lng">
+                                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                            </agm-map>
                     </div>
                 </div>
             </div>

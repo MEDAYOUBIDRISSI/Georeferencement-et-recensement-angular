@@ -8,16 +8,12 @@ export class ContetntComponent implements OnInit {
 
   constructor() { }
 
+  title = 'My first AGM project';
+  lat = 51.678418;
+  lng = 7.809007;
+
   ngOnInit(): void {
 
-    // let map: google.maps.Map;
-
-    // map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
-    //   center: { lat: -34.397, lng: 150.644 },
-    //   zoom: 8,
-    // });
   }
-
-
 
 }
