@@ -1,5 +1,5 @@
 git add .
-git commit -m "Add-Modal-in-Parte-of-Heritage-2"
+git commit -m "Add-service-v1"
 git remote add origin https://github.com/MEDAYOUBIDRISSI/Georeferencement-et-recensement-angular.git
 git push -f origin master
 
