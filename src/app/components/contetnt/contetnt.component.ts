@@ -13,6 +13,7 @@ export class ContetntComponent implements OnInit {
   lng = 7.809007;
   lat1 = 51.978418;
   lng1 = 7.909007;
+  
 
   ngOnInit(): void {
 
