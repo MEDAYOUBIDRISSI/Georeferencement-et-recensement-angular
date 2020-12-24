@@ -69,11 +69,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
+                    <div class="col-md-12">
                         <div class="box-widget widget-module">
                             <div class="widget-head clearfix">
                                 <span class="h-icon"><i class="fa fa-table"></i></span>
-                                <h4>Liste Des Province/Wilaya</h4>
+                                <h4>Liste Des Province</h4>
                             </div>
                             <div class="widget-container">
                                 <div class="widget-block">
@@ -102,11 +102,80 @@
                                                 Nom
                                             </th>
                                             <th class="tc-center">
-                                                Province/Wilaya
+                                                Region
                                             </th>
                                             <th class="form-actions">
                                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop_v2">
-                                                    Ajouter Province/Wilaya
+                                                    Ajouter Province
+                                                </button>
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="tc-center">
+                                                    03
+                                                </td>
+                                                <td class="tc-center">
+                                                    Ta7enawt
+                                                </td>
+                                                <td class="tc-center">
+                                                    Marrakech safi
+                                                </td>
+                                                <td class="tc-center">
+                                                    <div class="btn-toolbar" role="toolbar">
+                                                        <div class="btn-group" role="group">
+                                                            <a href="#" class="btn btn-default btn-sm m-user-edit">Edit</a>
+                                                            <a href="#" class="btn btn-default btn-sm m-user-delete">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="box-widget widget-module">
+                            <div class="widget-head clearfix">
+                                <span class="h-icon"><i class="fa fa-table"></i></span>
+                                <h4>Liste Des Wilaya</h4>
+                            </div>
+                            <div class="widget-container">
+                                <div class="widget-block">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label class="col-md-6 control-label">User Search:</label>
+                                                    <div class=" col-md-6">
+                                                        <input class="form-control" type="text" placeholder="Search">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-hover table-bordered matmix-dt">
+                                        <thead>
+                                        <tr>
+                                            <th class="tc-center">
+                                                #ID
+                                            </th>
+                                            <th class="tc-center">
+                                                Nom
+                                            </th>
+                                            <th class="tc-center">
+                                                Region
+                                            </th>
+                                            <th class="form-actions">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop_v3">
+                                                    Ajouter Wilaya
                                                 </button>
                                             </th>
                                         </tr>
@@ -120,7 +189,7 @@
                                                     Marrakech
                                                 </td>
                                                 <td class="tc-center">
-                                                    wilaya
+                                                    Marrakech safi
                                                 </td>
                                                 <td class="tc-center">
                                                     <div class="btn-toolbar" role="toolbar">
@@ -167,11 +236,11 @@
     </div>
 
      <!-- Modal_v2 -->
-     <div class="modal fade" id="staticBackdrop_v2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop_v2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Ajouter Province/Wilaya</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">Ajouter Province</h5>
                     </div>
                     <div class="modal-body">
                         <form id="SignUpForm" method="post" class="form-horizontal" action="#">
@@ -201,6 +270,42 @@
                 </div>
             </div>
         </div>
+
+    <!-- Modal_v3 -->
+    <div class="modal fade" id="staticBackdrop_v3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Ajouter Wilaya</h5>
+                </div>
+                <div class="modal-body">
+                    <form id="SignUpForm" method="post" class="form-horizontal" action="#">
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Libelle</label>
+                            <div class="col-lg-7">
+                                <input type="text" class="form-control" name="nom" placeholder="Libelle"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Region</label>
+                            <div class="col-lg-7">
+                                <select class="form-control input-sm status-select">
+                                    <option>Select</option>
+                                    <option>Marrakech</option>
+                                    <option>Safi</option>
+                                    <option>Casablanca</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>      
     <!-- <app-footer></app-footer> -->
 </div>

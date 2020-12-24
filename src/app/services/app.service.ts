@@ -22,6 +22,5 @@ export class AppService {
   public connexion(auth:Auth): Observable<DataUserConnected> {
     return this.http.post<DataUserConnected>(this.baseUrl + 'personne/auth/', auth);
   }
-
   // end Methods;
 }
