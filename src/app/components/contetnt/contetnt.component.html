@@ -27,7 +27,7 @@
                         <h4>Positio in Maps</h4>
                     </div>
                     <div class="widget-container">
-                        <agm-map id="map-home" [latitude]="lat" [longitude]="lng" [latitude]="lat1" [longitude]="lng1">
+                        <agm-map id="map-home" [latitude]="lat" [longitude]="lng" (mapClick)="onChoseLocation($event)">
                             <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
                             <agm-marker [latitude]="lat1" [longitude]="lng1"></agm-marker>
                         </agm-map>

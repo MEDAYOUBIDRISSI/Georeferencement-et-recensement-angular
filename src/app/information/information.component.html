@@ -1,18 +1,16 @@
+<div class="page-container iconic-view">
+        <app-leftbar></app-leftbar>
+        <div class="page-content">
+            <app-navbare></app-navbare>
+            <!-- //////////////////////// -->
 <div class="main-container">
-    <div class="container-fluid">
-        <div class="page-breadcrumb">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-header">
-                        <h2>Les Information</h2>
-                        <p>
-                            You can give any background color in any table head by using <code>.table-bordered .bg-hc-border</code> and <code>.table-bordered .bg-hc-stripe</code>
-                        </p>
-                    </div>
                     <div class="box-widget widget-module">
                         <div class="widget-head clearfix">
                             <span class="h-icon"><i class="fa fa-table"></i></span>
-                            <h4>A Complex Header Example</h4>
+                            <h4>Liste Des Regions</h4>
                         </div>
                         <div class="widget-container">
                             <div class="widget-block">
@@ -31,57 +29,51 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive">
-                                    <table class="table table-hover table-bordered matmix-dt bg-hc-border">
+                                    <table class="table table-striped table-hover table-bordered matmix-dt">
                                     <thead>
                                     <tr>
-                                        <th colspan="4">
-                                            <div class="dt-col-header">All Region.</div>
-                                            <p>
-                                                This is a example of a complex header table you can use this syle in any kind of table.
-                                            </p>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th class="tc-center">
-                                        <input class="tc-check-all" type="checkbox" value="0">
-                                    </th>
-                                    <th>
-                                        Libelle
-                                    </th>
-                                    <!-- <th class="tc-center">
-                                        Numbre de Province/wilaya
-                                    </th> -->
-                                    <th class="tc-center">
-                                        Action
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td class="tc-center">
-                                        <input type="checkbox" class="tc-check" value="0">
-                                    </td>
-                                    <td>
-                                        Marrakech Tanssift El 7awez
-                                    </td>
-                                    <!-- <td class="tc-center">
-                                        5
-                                    </td> -->
-                                    <td >     
-                                        <a href="#" class="btn btn-warning btn-block">Edit</a>
-                                        <a href="#" class="btn btn-danger btn-block">Delete</a>       
-                                    </td>
-                                </tr>
-                                </tbody>
-                                </table>
-                            </div>
+                                        <th class="tc-center">
+                                            #ID
+                                        </th>
+                                        <th class="tc-center">
+                                            Region
+                                        </th>
+                                        <th class="form-actions">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                                                Ajouter Region
+                                            </button>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="tc-center">
+                                            03
+                                        </td>
+                                        <td class="tc-center">
+                                            Marrakech
+                                        </td>
+                                        <td class="tc-center">
+                                            <div class="btn-toolbar" role="toolbar">
+                                                <div class="btn-group" role="group">
+                                                    <a href="#" class="btn btn-default btn-sm m-user-edit">Edit</a>
+                                                    <a href="#" class="btn btn-default btn-sm m-user-delete">Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="box-widget widget-module">
+                </div>
+                <div class="col-md-12">
+                        <div class="box-widget widget-module">
                             <div class="widget-head clearfix">
                                 <span class="h-icon"><i class="fa fa-table"></i></span>
-                                <h4>Wilaya</h4>
+                                <h4>Liste Des Province/Wilaya</h4>
                             </div>
                             <div class="widget-container">
                                 <div class="widget-block">
@@ -100,124 +92,115 @@
                                         </div>
                                     </div>
                                     <div class="table-responsive">
-                                        <table class="table table-hover table-bordered matmix-dt bg-hc-border">
+                                        <table class="table table-striped table-hover table-bordered matmix-dt">
                                         <thead>
                                         <tr>
-                                            <th colspan="4">
-                                                <div class="dt-col-header">All Wilayas.</div>
-                                                <p>
-                                                    This is a example of a complex header table you can use this syle in any kind of table.
-                                                </p>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th class="tc-center">
-                                            <input class="tc-check-all" type="checkbox" value="0">
-                                        </th>
-                                        <th>
-                                            Libelle
-                                        </th>
-                                        <th class="tc-center">
-                                            Region
-                                        </th>
-                                        <th class="tc-center">
-                                            Action
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="tc-center">
-                                            <input type="checkbox" class="tc-check" value="0">
-                                        </td>
-                                        <td>
-                                            Marrakech Tanssift El 7awez
-                                        </td>
-                                        <td class="tc-center">
-                                            Marrakech
-                                        </td>
-                                        <td >     
-                                            <a href="#" class="btn btn-warning btn-block">Edit</a>
-                                            <a href="#" class="btn btn-danger btn-block">Delete</a>       
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                    </table>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-widget widget-module">
-                                <div class="widget-head clearfix">
-                                    <span class="h-icon"><i class="fa fa-table"></i></span>
-                                    <h4>Province</h4>
-                                </div>
-                                <div class="widget-container">
-                                    <div class="widget-block">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <form class="form-horizontal">
-                                                    <div class="form-group">
-                                                        <label class="col-md-6 control-label">User Search:</label>
-                                                        <div class=" col-md-6">
-                                                            <input class="form-control" type="text" placeholder="Search">
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="table-responsive">
-                                            <table class="table table-hover table-bordered matmix-dt bg-hc-border">
-                                            <thead>
-                                            <tr>
-                                                <th colspan="4">
-                                                    <div class="dt-col-header">All Region.</div>
-                                                    <p>
-                                                        This is a example of a complex header table you can use this syle in any kind of table.
-                                                    </p>
-                                            </th>
-                                        </tr>
-                                        <tr>
                                             <th class="tc-center">
-                                                <input class="tc-check-all" type="checkbox" value="0">
-                                            </th>
-                                            <th>
-                                                Libelle
+                                                #ID
                                             </th>
                                             <th class="tc-center">
-                                                Region
+                                                Nom
                                             </th>
                                             <th class="tc-center">
-                                                Action
+                                                Province/Wilaya
+                                            </th>
+                                            <th class="form-actions">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop_v2">
+                                                    Ajouter Province/Wilaya
+                                                </button>
                                             </th>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td class="tc-center">
-                                                <input type="checkbox" class="tc-check" value="0">
-                                            </td>
-                                            <td>
-                                                Marrakech Tanssift El 7awez
-                                            </td>
-                                            <td class="tc-center">
-                                                Ourika
-                                            </td>
-                                            <td >     
-                                                <a href="#" class="btn btn-warning btn-block">Edit</a>
-                                                <a href="#" class="btn btn-danger btn-block">Delete</a>   
-                                            </td>
-                                        </tr>
+                                            <tr>
+                                                <td class="tc-center">
+                                                    03
+                                                </td>
+                                                <td class="tc-center">
+                                                    Marrakech
+                                                </td>
+                                                <td class="tc-center">
+                                                    wilaya
+                                                </td>
+                                                <td class="tc-center">
+                                                    <div class="btn-toolbar" role="toolbar">
+                                                        <div class="btn-group" role="group">
+                                                            <a href="#" class="btn btn-default btn-sm m-user-edit">Edit</a>
+                                                            <a href="#" class="btn btn-default btn-sm m-user-delete">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                         </table>
                                     </div>
-                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Ajouter Region</h5>
+                </div>
+                <div class="modal-body">
+                    <form id="SignUpForm" method="post" class="form-horizontal" action="#">
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Libelle</label>
+                            <div class="col-lg-7">
+                                <input type="text" class="form-control" name="nom" placeholder="Libelle"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
                 </div>
             </div>
         </div>
     </div>
-</div>    
+
+     <!-- Modal_v2 -->
+     <div class="modal fade" id="staticBackdrop_v2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Ajouter Province/Wilaya</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form id="SignUpForm" method="post" class="form-horizontal" action="#">
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label">Libelle</label>
+                                <div class="col-lg-7">
+                                    <input type="text" class="form-control" name="nom" placeholder="Libelle"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label">Region</label>
+                                <div class="col-lg-7">
+                                    <select class="form-control input-sm status-select">
+                                        <option>Select</option>
+                                        <option>Marrakech</option>
+                                        <option>Safi</option>
+                                        <option>Casablanca</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>      
+    <!-- <app-footer></app-footer> -->
+</div>

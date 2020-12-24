@@ -1,1 +1,28 @@
-<!-- <app-contetnt></app-contetnt> -->
+<div class="page-container iconic-view">
+    <app-leftbar></app-leftbar>
+    <div class="page-content">
+        <app-navbare></app-navbare>
+        <!-- //////////////////////// -->
+            <div class="main-container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box-widget widget-module">
+                                <div class="widget-head clearfix">
+                                    <span class="h-icon"><i class="fa fa-street-view"></i></span>
+                                    <h4>Positio in Maps</h4>
+                                </div>
+                                <div class="widget-container">
+                                    <agm-map id="map-home" [latitude]="lat" [longitude]="lng" (mapClick)="onChoseLocation($event)">
+                                        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                                        <agm-marker [latitude]="lat1" [longitude]="lng1"></agm-marker>
+                                    </agm-map>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>      
+        <!-- <app-footer></app-footer> -->
+</div>

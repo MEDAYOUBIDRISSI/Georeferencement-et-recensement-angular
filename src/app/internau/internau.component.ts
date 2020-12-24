@@ -8,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class InternauComponent implements OnInit {
 
   constructor() { }
-
+  title = 'My first AGM project';
+  lat = 51.678418;
+  lng = 7.809007;
+  lat1 = 51.978418;
+  lng1 = 7.909007;
+  onChoseLocation(event:any)
+  {
+    console.log(event.coords.lat);
+  }
   ngOnInit(): void {
   }
 

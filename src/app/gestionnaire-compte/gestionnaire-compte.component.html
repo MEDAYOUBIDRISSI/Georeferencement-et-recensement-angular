@@ -1,2 +1,164 @@
-<!-- <app-contetnt></app-contetnt> -->
-<h1>Lwez</h1>
+<div class="page-container iconic-view">
+    <app-leftbar></app-leftbar>
+    <div class="page-content">
+        <app-navbare></app-navbare>
+        <!-- //////////////////////// -->
+<div class="main-container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box-widget widget-module">
+                    <div class="widget-head clearfix">
+                        <span class="h-icon"><i class="fa fa-table"></i></span>
+                        <h4>Liste Des Perssone</h4>
+                        
+                    </div>
+                    <div class="widget-container">
+                        <div class="widget-block">
+                            <div class="row">
+                                <div class="col-md-6">
+                                </div>
+                                <div class="col-md-6">
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="col-md-6 control-label">User Search:</label>
+                                            <div class=" col-md-6">
+                                                <input class="form-control" type="text" placeholder="Search">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover table-bordered matmix-dt">
+                                <thead>
+                                <tr>
+                                    <th class="tc-center">
+                                        Image
+                                    </th>
+                                    <th class="tc-center">
+                                        Nom - Prenom
+                                    </th>
+                                    <th class="tc-center">
+                                        Type
+                                    </th>
+                                    <th class="tc-center">
+                                        Status
+                                    </th>
+                                    <th class="tc-center">
+                                        Email
+                                    </th>
+                                    <th class="tc-center">
+                                        Tel
+                                    </th>
+                                    <th class="tc-center">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                                            Ajouter Personne
+                                        </button>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="tc-center">
+                                        <a href="#" class="user-td-thumb"><img src="assets/images/avatar/adellecharles.jpg" alt="user">
+                                        </a>
+                                    </td>
+                                    <td class="tc-center">
+                                        Ayoub - IDRISSI
+                                    </td>
+                                    <td class="tc-center">
+                                        Admin
+                                    </td>
+                                    <td class="tc-center">
+                                        <label class="label label-success">Active</label>
+                                        <label class="label label-danger">Pas Active</label>
+                                    </td>
+                                    <td class="tc-center">
+                                        medayoub.idrissi@gmail.com
+                                    </td>
+                                    <td class="tc-center">
+                                        +212 606988480
+                                    </td>
+                                    <td class="tc-center">
+                                        <div class="btn-toolbar" role="toolbar">
+                                            <div class="btn-group" role="group">
+                                                <a href="#" class="btn btn-default btn-sm m-user-edit">Edit</a>
+                                                <a href="#" class="btn btn-default btn-sm m-user-delete">Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Ajouter Patremoin</h5>
+            </div>
+            <div class="modal-body">
+                <form id="SignUpForm" method="post" class="form-horizontal" action="http://www.lab.westilian.com/matmix-admin/iconic-view/data/target.php">
+                    <div class="form-group">
+                        <label class="col-lg-4 control-label">Nom</label>
+                        <div class="col-lg-7">
+                            <input type="text" class="form-control" name="nom" placeholder="First name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-4 control-label">Prenom</label>
+                        <div class="col-lg-7">
+                            <input type="text" class="form-control" name="prenom" placeholder="First name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-4 control-label">Date Naissance</label>
+                        <div class="col-lg-7">
+                            <input type="text" name="datenaissance" class="form-control input-date-picker">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-4 control-label">Email</label>
+                        <div class="col-lg-7">
+                            <input type="email" class="form-control" name="email" placeholder="First name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-4 control-label">Password</label>
+                        <div class="col-lg-7">
+                            <input type="password" class="form-control" name="password" placeholder="First name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-4 control-label">Adress</label>
+                        <div class="col-lg-7">
+                            <textarea class="form-control" name="adress" placeholder="Adress ..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-4 control-label">Tel</label>
+                        <div class="col-lg-7">
+                            <input type="text" class="form-control" name="tel" placeholder="First name"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>      
+<!-- <app-footer></app-footer> -->
+</div>

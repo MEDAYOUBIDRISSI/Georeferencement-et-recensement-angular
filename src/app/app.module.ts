@@ -15,6 +15,8 @@ import { RecenseurComponent } from './recenseur/recenseur.component';
 import { InternauComponent } from './internau/internau.component';
 import { AdministrateurRegionComponent } from './administrateur-region/administrateur-region.component';
 import { InformationComponent } from './information/information.component';
+import { TestAuthComponent } from './test-auth/test-auth.component';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { InformationComponent } from './information/information.component';
     InternauComponent,
     AdministrateurRegionComponent,
     InformationComponent,
+    TestAuthComponent,
+    AuthComponent,
   ],
   imports: [
     BrowserModule,
