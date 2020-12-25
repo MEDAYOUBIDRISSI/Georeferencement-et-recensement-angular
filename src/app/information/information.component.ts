@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { AppService } from '../services/app.service';
+import { Province } from '../class/Province';
+import { Wilaya } from '../class/Wilaya';
 
 const baseUrl = 'http://localhost:8080/api/tutorials';
 
@@ -16,10 +19,31 @@ const baseUrl = 'http://localhost:8080/api/tutorials';
 })
 export class InformationComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  listProvinces: Province[] = [];
+  listWilaya: Wilaya[] = [];
+
+  constructor(private http: HttpClient,
+    private service:AppService) { }
 
   ngOnInit(): void {
+    this.service.findAllProvince().subscribe(obj =>{
+      this.listProvinces.push(obj)
+      console.log(this.listProvinces);
+      
+    })
+    this.service.findAllWilaya().subscribe(obj =>{
+      this.listWilaya.push(obj)
+        console.log(this.listWilaya);
+
+    })
   }
+
+  /*findAllRegion(){
+    this.service.findAllRegion().subscribe(obj =>{
+      console.log(obj);
+    })
+
+  }*/
 
   getAll(): Observable<any> {
     return this.http.get(baseUrl);
