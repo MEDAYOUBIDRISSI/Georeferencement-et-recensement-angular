@@ -1,0 +1,73 @@
+<div class="page-container iconic-view">
+    <app-leftbar></app-leftbar>
+    <div class="page-content">
+        <app-navbare></app-navbare>
+        <!-- //////////////////////// -->
+        <div class="main-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Ajouter Gestionnair</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <form (ngSubmit) = "onSubmit()" class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="col-lg-4 control-label">Nom</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" class="form-control" [(ngModel)] = "administrateurRegional.nom" name="nom" placeholder="First name"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-4 control-label">Prenom</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" class="form-control" [(ngModel)] = "administrateurRegional.prenom" name="prenom" placeholder="First name"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-4 control-label">Date Naissance</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" [(ngModel)] = "administrateurRegional.dateNaissance" name="datenaissance" class="form-control input-date-picker">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-4 control-label">Email</label>
+                                            <div class="col-lg-7">
+                                                <input type="email" [(ngModel)] = "administrateurRegional.email" class="form-control" name="email" placeholder="First name"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-4 control-label">Password</label>
+                                            <div class="col-lg-7">
+                                                <input type="password" [(ngModel)] = "administrateurRegional.password" class="form-control" name="password" placeholder="First name"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-4 control-label">Adress</label>
+                                            <div class="col-lg-7">
+                                                <textarea class="form-control" [(ngModel)] = "administrateurRegional.adresse" name="adress" placeholder="Adress ..."></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-4 control-label">Tel</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" [(ngModel)] = "administrateurRegional.tel" class="form-control" name="tel" placeholder="First name"/>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>      
+<!-- <app-footer></app-footer> -->
+</div>

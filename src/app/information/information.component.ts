@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { AppService } from '../services/app.service';
 import { Province } from '../class/Province';
 import { Wilaya } from '../class/Wilaya';
+import { Region } from '../class/Region';
 
 const baseUrl = 'http://localhost:8080/api/tutorials';
 
@@ -19,6 +20,7 @@ const baseUrl = 'http://localhost:8080/api/tutorials';
 })
 export class InformationComponent implements OnInit {
 
+  listRegion: Region[] = [];
   listProvinces: Province[] = [];
   listWilaya: Wilaya[] = [];
 
@@ -26,16 +28,21 @@ export class InformationComponent implements OnInit {
     private service:AppService) { }
 
   ngOnInit(): void {
-    this.service.findAllProvince().subscribe(obj =>{
-      this.listProvinces.push(obj)
-      console.log(this.listProvinces);
+    // this.service.findAllProvince().subscribe(obj =>{
+    //   this.listProvinces.push(obj)
+    //   console.log(this.listProvinces);
       
-    })
-    this.service.findAllWilaya().subscribe(obj =>{
-      this.listWilaya.push(obj)
-        console.log(this.listWilaya);
+    // })
+    // this.service.findAllWilaya().subscribe(obj =>{
+    //   this.listWilaya.push(obj)
+    //     console.log(this.listWilaya);
 
-    })
+    // })
+    // this.service.findAllRegion().subscribe(obj =>{
+    //   this.listRegion.push(obj)
+    //     console.log(this.listRegion);
+
+    // })
   }
 
   /*findAllRegion(){
